@@ -1,6 +1,6 @@
 {
     "name": "waves8ball",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "",
     "author": "Waves Protocol",
     "scripts": {
@@ -8,10 +8,10 @@
         "start": "http-server ./ -p 8081"
     },
     "dependencies": {
-        "@waves.exchange/provider-web": "^0.2.3",
-        "@waves/signer": "^0.1.2",
-        "@waves/waves-transactions": "^4.1.2",
-        "webpack": "^5.4.0"
+        "@waves.exchange/provider-web": "^1.0.2",
+        "@waves/signer": "^1.0.2",
+        "@waves/waves-transactions": "*",
+        "webpack": "*"
     },
     "devDependencies": {
         "webpack-cli": "^3.3.10",
