@@ -22,6 +22,8 @@ document.querySelector(".js-invoke").addEventListener("click", async function ()
         // Call tellme function of wavesexplorer.com/tesnet/address/3MqDhjXwvCbFCpkA3o6BQkTWtD59267HhXA/script dApp
         // Generate an answer and write it to the dApp data storage
 
+        document.querySelector(".answer").innerHTML = `Preparing an answer, please wait a bit...`;
+
         try {
             await signer.invoke({
                 dApp: ballAddress,
@@ -33,7 +35,7 @@ document.querySelector(".js-invoke").addEventListener("click", async function ()
 
         // Read an answer from dApp data storage
 
-            let answer = await nodeInteraction.accountDataByKey(user.address+'_a',ballAddress,nodeUrl);
+            let answer = await nodeInteraction.accountDataByKey(user.address + '_a', ballAddress,nodeUrl);
             document.querySelector(".answer").innerHTML = `Your answer is: ${answer.value}`;
         } catch (e) {
             console.error('Question denied')

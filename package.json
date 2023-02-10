@@ -8,13 +8,13 @@
         "start": "http-server ./ -p 8081"
     },
     "dependencies": {
-        "@waves.exchange/provider-web": "^1.0.2",
-        "@waves/signer": "^1.0.2",
+        "@waves.exchange/provider-web": "*",
+        "@waves/signer": "*",
         "@waves/waves-transactions": "*",
         "webpack": "*"
     },
     "devDependencies": {
-        "webpack-cli": "^3.3.10",
-        "http-server": "^0.12.1"
+        "webpack-cli": "*",
+        "http-server": "*"
     }
 }
